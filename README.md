@@ -1,15 +1,15 @@
-#### Folder Synchronization Script
+## Folder Synchronization Script
 
 This is a Python-based script that synchronizes the contents of two directories, `source` and `replica`. It ensures that the `replica` folder is an exact copy of the `source` folder and does so periodically.
 
-## Usage
+#### Usage
 
 To run the script, use the following command:
 
 `py folder_sync.py --source <source_directory> --replica <replica_directory> --interval <sync_interval> --logfile <logfile_path>`
 
 
-## Arguments:
+#### Arguments:
    
     -s, --source: Required. The path to the source directory you want to sync.
     -r, --replica: Required. The path to the replica directory that will be synchronized.
