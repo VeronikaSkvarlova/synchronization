@@ -60,6 +60,8 @@ def synchronize_file(src_path, rep_path, file, log_file):
         shutil.copy2(src_file, rep_file)
         log("Created", rep_file, log_file)
     # If the files are different, update the file in the replica
+    # This is not the most efficient solution, as it copies the whole file
+    # even when only a part of it has changed.
     elif not same_files(src_file, rep_file):
         shutil.copy2(src_file, rep_file)
         log("Updated", rep_file, log_file)
